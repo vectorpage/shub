@@ -97,7 +97,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\r\nbody{\r\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\r\n    height:100%; /* important to vertically align the container */\r\n    margin:0;\r\n    padding:0;\r\n}\r\n\r\n.vertical-center {\r\n    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */\r\n    min-height: 100vh; /* These two lines are counted as one 🙂       */\r\n    display: -ms-flexbox;\r\n    display: flex;\r\n    -ms-flex-align: center;\r\n        align-items: center;\r\n}\r\n\r\n", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\r\nbody{\r\n    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;\r\n}\r\n\r\n", ""]);
 
 // exports
 

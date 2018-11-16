@@ -38,7 +38,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"text-center\">\n        <router-outlet></router-outlet>\n</div>\n"
+module.exports = "<div class=\"text-center\">\n        <app-header></app-header>\n        <router-outlet></router-outlet>\n        <app-footer></app-footer>\n</div>"
 
 /***/ }),
 
@@ -165,7 +165,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/footer/footer.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n    i am in footer page\r\n</div>"
+module.exports = "<div>\r\n</div>"
 
 /***/ }),
 
@@ -214,7 +214,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".logo\r\n{\r\n    width: 134px;  \r\n    height: 30px;  \r\n    font-family: CircularStd;  \r\n    font-size: 24px;  \r\n    font-weight: bold;\r\n    font-style: normal;\r\n    font-stretch: normal;\r\n    line-height: normal;\r\n    letter-spacing: normal;\r\n    color: #0275d8;\r\n    padding-top:4%;\r\n}\r\n\r\n.text-style-1{\r\n    font-weight: normal;\r\n    font-style: italic;\r\n    color: #ff7d00;  \r\n}", ""]);
 
 // exports
 
@@ -227,7 +227,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/header/header.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<header>\r\n    SignIn/Register\r\n</header>"
+module.exports = "<div class=\"container\">\r\n    <div class=\"row\">\r\n        <div class=\"col-sm-4\">\r\n            <p class=\"logo\">Support<span class=\"text-style-1\">Hub</span></p><br><br>\r\n        </div>\r\n        <div class=\"col-sm-4\">\r\n            <h3>Sign In/Register</h3>\r\n        </div>\r\n        <div class=\"col-sm-4\">\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
@@ -276,7 +276,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "#login-form{\r\n    line-height: 110px;\r\n    \r\n}\r\n\r\n.logo\r\n{\r\n    width: 134px;  \r\n    height: 30px;  \r\n    font-family: CircularStd;  \r\n    font-size: 24px;  \r\n    font-weight: bold;\r\n    font-style: normal;\r\n    font-stretch: normal;\r\n    line-height: normal;\r\n    letter-spacing: normal;\r\n    color: #0275d8;\r\n    padding:1%;\r\n}\r\n\r\n.text-style-1{\r\n    font-weight: normal;\r\n    font-style: italic;\r\n    color: #ff7d00;  \r\n}", ""]);
+exports.push([module.i, "", ""]);
 
 // exports
 
@@ -289,7 +289,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/login/login.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\r\n    <div class=\"row\">\r\n        <div class=\"col-*-*\">\r\n            <p class=\"text-center\">Sign in with Email</p>\r\n            <div class=\"form-group\">\r\n                <input [(ngModel)]=\"email\" type=\"text\" class=\"form-control\" placeholder=\"Email\">\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <input [(ngModel)]=\"passcode\" type=\"password\" class=\"form-control\" placeholder=\"Password\">\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <button (click)=\"loginUser()\" type=\"button\" class=\"btn btn-primary btn-block\">Sign in</button>\r\n            </div>\r\n            <span class=\"text-center\">New Here?</span>\r\n            <button (click)=\"redirectToReg('p')\" type=\"button\" class=\"btn btn-primary btn-block\">I am\r\n                looking for support</button>\r\n            <button (click)=\"redirectToReg('s')\" type=\"button\" class=\"btn btn-primary btn-block\">Become\r\n                a Support worker</button>\r\n        </div>\r\n        <div class=\"col-*-*\"></div>\r\n    </div>\r\n</div>"
+module.exports = "<div class=\"container text-center\">\r\n    <div class=\"row\">\r\n        <div class=\"col-sm-4 col-sm-offset-4\">\r\n            <br/>\r\n            Sign in with Email\r\n            <br/><br/>\r\n            <div class=\"form-group\">\r\n                <input [(ngModel)]=\"email\" type=\"text\" class=\"form-control\" placeholder=\"Email\">\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <input [(ngModel)]=\"passcode\" type=\"password\" class=\"form-control\" placeholder=\"Password\">\r\n            </div>\r\n            <div class=\"form-group\">\r\n                <button (click)=\"loginUser()\" type=\"button\" class=\"btn btn-primary btn-block\">Sign in</button>\r\n            </div>\r\n            <p>\r\n                New Here?\r\n            </p>\r\n            <button (click)=\"redirectToReg('p')\" type=\"button\" class=\"btn btn-primary btn-block\">I am\r\n                looking for support</button>\r\n            <button (click)=\"redirectToReg('s')\" type=\"button\" class=\"btn btn-primary btn-block\">Become\r\n                a Support worker</button>\r\n        </div>\r\n    </div>\r\n</div>"
 
 /***/ }),
 
